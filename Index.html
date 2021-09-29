@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uranus</title>
+
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="sections" id="app">
+
+    <nav v-show="nav">
+
+      <img src="svg/logo.svg">
+
+      <ul class="map-menu">
+        <a onclick="trans_request()" v-on:click="" href="#introduce">INTRODUCE</a>
+        <a onclick="trans_request()" href="#skills&coding">SKILLS & CODING</a>
+        <a onclick="trans_request()" href="#projects">PROJECTS</a>
+      </ul>
+
+      <button onclick="trans_request()">
+        <a href="#beintouch">BE IN TOUCH</a>
+      </button>
+
+    </nav>
+
+    <section id="introduce" class="sec01" v-show="sec01">
+
+      <div class="group-wrap">
+        <div class="text-wrap">
+          <h1>
+            <span>
+              MY NAME IS <mark>MOAZ ALLA</mark>& I’M 18 Y.O
+            </span>
+          </h1>
+        </div>
+        <div class="text-wrap">
+          <h3>You’re in the right place if you were looking for a <mark>Front-end</mark>
+            web devoloper & <mark>minmal</mark> designer</h3>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="skills&coding" class="sec02" v-show="sec02">
+      <div class="group-wrap">
+        <div class="text-wrap">
+
+          <h3>
+            I’ve +2 years of experience in <mark>front-end devolopment</mark>, I prefer to don’t use frameworks or
+            liberarys but i
+            have a good experience with <mark>Vue.js</mark> & <mark>Sass</mark> and more if had to,
+          </h3>
+
+          <h3>
+            There’s also +1.5 years of experience in <mark>Ui</mark> and i enjoy making <mark>minmal web design</mark>,
+            I
+            have some baisc to
+            intermediate knowledge of <mark>Ux</mark> as i done some researches in this field.
+          </h3>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="beintouch" class="sec03" v-show="sec03">
+
+      <div class="group-wrap">
+        <div class="text-wrap">
+          <h3>
+            It is very important for to keep in touch with you,
+            so we are always ready to answer any question you interest ;)
+          </h3>
+        </div>
+        <div class="contact-form text-wrap">
+          <input type="name" name="name" id="" placeholder="Name" spellcheck="false">
+          <input type="email" name="email" id="" placeholder="Email" spellcheck="false">
+          <textarea type="text" v-text="msg" name="message"
+          maxlength="600" height="fit-content" onkeyup="this.style.height = `35px`; this.style.height = `${this.scrollHeight}px`; console.log(`${this.scrollHeight}px`)" placeholder="Message"></textarea>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <h4>Built & designed by <mark type="me"><t style="position:absolute; z-index: 10000000000000;">Moaz Alla</t><img src="svg/ME.svg"></mark><t style="opacity:0;">Moaz Alla</t> and <br>
+      He’s the owner of uranus too.</h4>
+  </footer>
+</body>
+<script src="active/app.js"></script>
+
+</html>
