@@ -1,0 +1,224 @@
+h1 {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.0555em;
+  line-height: 130%;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: var(--M02-02);
+  margin: 0 auto;
+}
+
+h1 span {
+  margin: 0 auto;
+  width: clamp(340px, 100%, 500px);
+  -webkit-animation: down 1.6s cubic-bezier(0, 0.2, 0, 1);
+          animation: down 1.6s cubic-bezier(0, 0.2, 0, 1);
+}
+
+h2 {
+  overflow: hidden;
+  width: minmax(340px, 700px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.6em;
+  line-height: 130%;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: var(--M02-02);
+}
+
+h3 {
+  -webkit-animation: fade-in 1.5s ease-in;
+          animation: fade-in 1.5s ease-in;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 125%;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: var(--M02-03);
+  width: clamp(310px, 100%, 500px);
+  margin: 0 auto;
+}
+
+h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 115%;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: var(--M02-04);
+  width: clamp(300px, 40%, 500px);
+}
+
+mark {
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke-color: transparent;
+  background: var(--M04) repeat;
+  background-size: 90%;
+  -webkit-background-clip: text;
+}
+
+mark[type="subtitle"] {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--M02-02);
+}
+
+mark[type="me"] {
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: underline;
+  -webkit-text-stroke-color: unset;
+  -webkit-background-clip: unset;
+  background: unset;
+  background-size: unset;
+  color: var(--M02-01);
+}
+
+mark[type="me"] img {
+  position: absolute;
+}
+
+mark[type="me"][type="me"]:not(hover) img {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-size: 240%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: 150%;
+     object-fit: 150%;
+}
+
+mark[type="me"][type="me"]:hover img {
+  opacity: 1;
+  -webkit-transform: translateY(-80%) translateX(-15%);
+          transform: translateY(-80%) translateX(-15%);
+  -webkit-transition: .3s;
+  transition: .3s;
+  -o-object-fit: 100%;
+     object-fit: 100%;
+}
+
+nav ul a {
+  cursor: pointer;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.6em;
+  line-height: 115%;
+  text-align: center;
+  color: var(--M02-03);
+  padding: 7px 0;
+  margin: auto 14px;
+}
+
+nav ul a:not(:hover) {
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+nav ul a:hover {
+  color: var(--M02);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+nav button {
+  cursor: pointer;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.7rem 1rem;
+  margin: auto 0 auto auto;
+  border-radius: 30px;
+  background: var(--M04);
+  background-size: 130%;
+  background-position: center;
+}
+
+nav button:not(hover) {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav button:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 115%;
+}
+
+nav button a {
+  color: var(--M01);
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .8em;
+  line-height: 115%;
+  text-align: center;
+  color: var(--M01);
+  padding: 7px 0;
+  margin: auto 14px;
+}
+
+.contact-form label {
+  -webkit-animation: fade-in 1.5s ease-in;
+          animation: fade-in 1.5s ease-in;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 125%;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: var(--M02-04);
+  padding: 0;
+  margin: 0;
+}
+
+.contact-form button[type="submit"] {
+  cursor: pointer;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.7rem 1rem;
+  margin: auto 0 auto auto;
+  background: transparent;
+  color: var(--M02-03);
+}
+
+@media screen and (min-width: 417px) {
+  footer h4 {
+    position: fixed;
+    left: 5.55rem;
+    bottom: 2.55rem;
+  }
+}
+/*# sourceMappingURL=text.css.map */
