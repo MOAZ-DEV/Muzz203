@@ -48,6 +48,7 @@ h3 {
   font-style: normal;
   font-weight: 300;
   font-size: 0.8em;
+  user-select: none;
   line-height: 125%;
   letter-spacing: 0.05em;
   text-align: left;
