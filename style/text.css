@@ -89,6 +89,7 @@ mark[type="me"] {
   text-decoration: underline;
   -webkit-text-stroke-color: unset;
   -webkit-background-clip: unset;
+  cursor: pointer;
   background: unset;
   background-size: unset;
   color: var(--M02-01);
